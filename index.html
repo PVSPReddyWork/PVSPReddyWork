@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="./../Styles/index.css" rel="stylesheet" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 99%;
+      }
+      nav {
+        width: 100%;
+        height: 50px;
+      }
+      #bodyHolder {
+        display: flex;
+        flex-direction: column;
+        /* flex-flow: column; */
+        height: 100%;
+      }
+      #contentHolder {
+        flex-grow: 1;
+        /* background-color: #0f0; */
+      }
+      .displayFrame {
+        height: 100%;
+        width: 100%;
+      }
+
+      p {
+        margin: 0px;
+        padding: 2px;
+      }
+
+      #basicProfileDiv {
+        display: flex;
+        flex-direction: row;
+      }
+      #nameDiv {
+        flex: 1;
+      }
+      #nameP {
+        font-weight: bold;
+        font-size: 16px;
+      }
+      #contactInfoDiv {
+        text-align: right;
+      }
+
+      .underline {
+        border-bottom: 1px solid #aaa;
+      }
+
+      .headingHolderDiv {
+        height: 20px;
+        background-color: cyan;
+        margin-top: 15px;
+      }
+      .headingP {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: yellow;
+        padding: 0px;
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--onload="onLoadBody(); return null;"-->
+    <div id="bodyHolder">
+      <div id="contentHolder">
+        <embed
+          class="displayFrame"
+          type="text/html"
+          src="https://script.google.com/macros/s/AKfycbwmwLv-V6aT5w9JcYiv8ZkIhedTMXRJG04l_WdC4paY1DHDZ7VJoKVHKQfS1yM--Vtp/exec?page=profile&data=ready"
+        />
+      </div>
+    </div>
+  </body>
+</html>
